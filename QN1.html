@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Qn1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <pre>
+    class Account {
+        protected double balance;
+        
+        public Account(double balance) {
+            if (balance >= 0.0)
+                this.balance = balance;
+            else {
+                this.balance = 0.0;
+                System.out.println("Error: Initial balance was invalid.");
+            }
+        }
+        
+        public void credit(double amount) {
+            balance += amount;
+        }
+        
+        public boolean debit(double amount) {
+            if (amount > balance) {
+                System.out.println("Debit amount exceeded account balance.");
+                return false;
+            }
+            else {
+                balance -= amount;
+                return true;
+            }
+        }
+    <h1>Body Tag explanations</h1>
+    <p>HTML <body> tag defines the main content of an HTML document which displays on the browser.
+         It can contain text content, paragraphs, headings, images, tables, links and videos</p>
+         <p>The <body> must be the second element after the <head> tag or it should be placed between </head> and </html> tags. 
+        This tag is required for every HTML document and should only use once in the whole HTML document.</p>
+        <p>Example of tag is <body>  
+            <h2>This is mywebsite</h2>  
+            <p>This paragraph is written between the body tag</p>  
+           </body>  
+        </p>
+        <h2>Pre-formating explanations</h2>
+        <p>The HTML <pre> tag is used to specify pre formatted texts. 
+            Texts within <pre>.......</pre> tag is displayed in a fixed-width font.Usually it is displayed in Courier font. It maintains both space and line break.
+          Example is <pre>  
+            class Account {
+                protected double balance;
+                
+                public Account(double balance) {
+                    if (balance >= 0.0)
+                        this.balance = balance;
+                    else {
+                        this.balance = 0.0;
+                        System.out.println("Error: Initial balance was invalid.");
+                    }
+                } 
+            </pre>  
+        </p>
+</body>
+</html>
